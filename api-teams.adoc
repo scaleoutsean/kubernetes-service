@@ -10,6 +10,7 @@ summary: How to use the Teams API resource for the NKS API.
 
 Teams allow you to organize your https://nks.netapp.io[NetApp Kubernetes Service (NKS)] users into groups, in order to manage their access rights.
 
+
 == GET All Teams
 
 Get the list of Teams for the specified Organization.

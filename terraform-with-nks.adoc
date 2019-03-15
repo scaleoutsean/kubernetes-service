@@ -5,6 +5,7 @@ summary: Learn how to build and manage infrastructure through NKS using Terrafor
 ---
 = Terraform on NKS
 
+
 Learn how to build and manage infrastructure through https://nks.netapp.io[NetApp Kubernetes Service (NKS)] using Terraform.
 
 * <<Requirements>>
