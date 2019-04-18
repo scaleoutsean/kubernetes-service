@@ -8,15 +8,15 @@
     <language>en</language>
     <ttl>60</ttl>
     <atom:link href="https://docs.netapp.com/kubernetes-service/en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Apr 2019 20:56:57 +0000</pubDate>
-    <lastBuildDate>Thu, 18 Apr 2019 20:56:57 +0000</lastBuildDate>
+    <pubDate>Thu, 18 Apr 2019 21:04:00 +0000</pubDate>
+    <lastBuildDate>Thu, 18 Apr 2019 21:04:00 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>News</title>
+      <title>What&amp;#8217;s New</title>
       <description>News and updates for NetApp Kubernetes Service (NKS)</description>
-      <pubDate>Thu, 28 Mar 2019 15:36:34 +0000</pubDate>
+      <pubDate>Thu, 18 Apr 2019 20:59:47 +0000</pubDate>
       <link>https://docs.netapp.com/en/kubernetes-service/news.html</link>
     </item>
     
