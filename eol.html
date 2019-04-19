@@ -2,13 +2,13 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>Search results | NetApp Cloud Docs</title>
+  <title>StackPointCloud EOL Information | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Search results | NetApp Cloud Docs" />
+  <meta property="og:title" content="StackPointCloud EOL Information | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/en/search.html" />
-	<meta property="og:description" content="" />
-  <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/en/images/logo-tophat-social.png" />
+	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/eol.html" />
+	<meta property="og:description" content="More information on the StackPointCloud EOL." />
+  <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -18,15 +18,15 @@
   <meta http-equiv="nss-type" content="Product Documentation">
   <meta http-equiv="nss-subtype" content="User Guide">
   
-  <meta name="description" content="">
+  <meta name="description" content="More information on the StackPointCloud EOL.">
   <meta name="keywords" content=" ">
 
   <!-- Icons -->
-  <link rel="icon" href="/kubernetes-service/en/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/kubernetes-service/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed -->
   
-  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/kubernetes-service/en/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/kubernetes-service/feed.xml">
   
 
   <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -35,23 +35,23 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
   <!-- LUCI CSS Content -->
-  <link rel="stylesheet" href="/kubernetes-service/en/common/css/esb.min.css">
-  <link rel="stylesheet" href="/kubernetes-service/en/common/css/netapp-library.min.css">
-  <link rel="stylesheet" href="/kubernetes-service/en/common/css/doc.css">
-  <link rel="stylesheet" href="/kubernetes-service/en/common/css/doc-components.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/esb.min.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/doc.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/doc-components.css">
 
-  <link rel="stylesheet" href='/kubernetes-service/en/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/en/css/na-search.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/en/css/clouddocs.css' type='text/css'>
+  <link rel="stylesheet" href='/kubernetes-service/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/clouddocs.css' type='text/css'>
 
   <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
-  <link rel="stylesheet" type="text/css" href="/kubernetes-service/en/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="/kubernetes-service/en/css/customstyles.css"> -->
+  <link rel="stylesheet" type="text/css" href="/kubernetes-service/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/kubernetes-service/css/customstyles.css"> -->
   <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/kubernetes-service/en/css/boxshadowproperties.css">
+  <link rel="stylesheet" href="/kubernetes-service/css/boxshadowproperties.css">
 
   <!-- NetApp CSS controls the technical content -->
-  <link rel='stylesheet' href='/kubernetes-service/en/css/netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/netapp.css' type='text/css'>
 
   
 
@@ -60,18 +60,23 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
-
+    <script src='/kubernetes-service/js/na-search.js'></script>
   
 
-  <link rel='stylesheet' href='/kubernetes-service/en/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/en/css/prism-netapp.css' type='text/css'>
+  
+  <link rel='stylesheet' href='/kubernetes-service/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/kubernetes-service/js/na-pagenav.js'></script>
+  
 
-  <script src='/kubernetes-service/en/js/clouddocs.js'></script>
-  <script src='/kubernetes-service/en/js/s_code_impl.js'></script>
-  <script src='/kubernetes-service/en/js/jquery.navgoco.min.js'></script>
+  <link rel='stylesheet' href='/kubernetes-service/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/prism-netapp.css' type='text/css'>
+
+  <script src='/kubernetes-service/js/clouddocs.js'></script>
+  <script src='/kubernetes-service/js/s_code_impl.js'></script>
+  <script src='/kubernetes-service/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/kubernetes-service/en/js/toc.js'></script>
-  <script src='/kubernetes-service/en/js/customscripts.js'></script>
+  <script src='/kubernetes-service/js/toc.js'></script>
+  <script src='/kubernetes-service/js/customscripts.js'></script>
 
   <script>
       $(document).ready(function() {
@@ -156,7 +161,7 @@
       <div class="n-off-canvas-menu__property-title">NetApp Cloud Docs</div>
       <ul class="n-off-canvas-menu__property-navigation-list">
         <li class="n-off-canvas-menu__property-navigation-list-item ">
-          <a href="https://docs.netapp.com/en/" class="n-off-canvas-menu__property-navigation-link">
+          <a href="https://docs.netapp.com/zz/" class="n-off-canvas-menu__property-navigation-link">
             Home
           </a>
           <div class="n-off-canvas-menu__child-menu">
@@ -197,19 +202,19 @@
       <div class="n-property-bar__menu-toggle">
         <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
           <title>bars</title>
-          <use xlink:href="/kubernetes-service/en/common/svg/sprite.svg#bars"></use>
+          <use xlink:href="/kubernetes-service/common/svg/sprite.svg#bars"></use>
         </svg></a>
       </div>
       <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
-        <a class="n-property-bar__property-link" href="https://docs.netapp.com/en/">
+        <a class="n-property-bar__property-link" href="https://docs.netapp.com/zz/">
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/kubernetes-service/en/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/kubernetes-service/common/svg/sprite.svg#netapp-mark"></use>
             </svg>
             <svg viewBox="0 0 1008 181.537" class="n-property-bar__logo-svg" aria-labelledby="title">
               <title>NetApp</title>
-              <use xlink:href="/kubernetes-service/en/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/kubernetes-service/common/svg/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
           <h2 class="n-property-bar__property-name">Cloud Docs</h2>
@@ -218,6 +223,10 @@
 
       <!-- NetApp Search Bar -->
       
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
+      
 
       <div id="ie-i18n-menu" class="n-property-bar__utils">
         <ul class="n-property-navigation-bar__utils-list">
@@ -225,7 +234,7 @@
             <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle" data-menu-id="n-property-navigation-bar__menu--language-selector">
               <svg class="n-icon-globe n-globe__icon" aria-labelledby="title">
                 <title>globe</title>
-                <use xlink:href="/kubernetes-service/en/common/svg/sprite.svg#globe"></use>
+                <use xlink:href="/kubernetes-service/common/svg/sprite.svg#globe"></use>
               </svg>
             </a>
           </li>
@@ -250,7 +259,7 @@
             </li>
           </ul>
           <div class="menu__footer">
-            <p>Current Language: en
+            <p>Current Language: zz
             </p>
           </div>
         </div>
@@ -408,8 +417,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results
+  <h1 class="n-doc__component-detail-heading">StackPointCloud EOL Information
     <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/blob/master/eol.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/issues/new?body=Page%3A%20[StackPointCloud EOL Information](https://docs.netapp.com/zz/kubernetes-service/eol.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -417,18 +429,38 @@
 
 <p class="page-details">
 
-<time datetime="2019-04-19 19:49:13 +0000">04/19/2019</time>
+<time datetime="2019-04-19 19:47:54 +0000">04/19/2019</time>
 
+
+<span>Contributors
+  
+  <a target="_blank" href="https://github.com/ebarcott">
+    <img  class="avatar avatar-small"
+          alt="ebarcott"
+          width="20" height="20"
+          src="https://avatars3.githubusercontent.com/u/44878916?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
 
 </p>
 
-<div id="react-search"></div>
-
+<div class="paragraph">
+<p>Coming soon.</p>
+</div>
 
         </article>
         <!-- Page Container -->
       </div>
 
+      
+      <div class="page-nav-container">
+        <nav class="page-nav-fixed">
+          <div class="page-nav-title">On this page:</div>
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </nav>
+      </div>
       
 
     </div>
@@ -459,7 +491,7 @@
                       <span class="n-footer__social-link-text">blog</span>
                       <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                         <title>blog@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/en/common/svg/sprite.svg#blog"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#blog"></use>
                       </svg>
                     </a>
                   </li>
@@ -468,7 +500,7 @@
                       <span class="n-footer__social-link-text">community</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>community@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/en/common/svg/sprite.svg#comments"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#comments"></use>
                       </svg>
                     </a>
                   </li>
@@ -478,7 +510,7 @@
                       <span class="n-footer__social-link-text">twitter</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>twitter@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/en/common/svg/sprite.svg#twitter"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -487,7 +519,7 @@
                       <span class="n-footer__social-link-text">youtube</span>
                       <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                         <title>youtube@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/en/common/svg/sprite.svg#youtube"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#youtube"></use>
                       </svg>
                     </a>
                   </li>
@@ -496,7 +528,7 @@
             </div>
             <div class="n-footer__bottom-right">
               <div class="n-footer__copyright">
-                <a href="https://docs.netapp.com/en/contribute/" class="n-footer__copyright-link">Contribute</a>
+                <a href="https://docs.netapp.com/zz/contribute/" class="n-footer__copyright-link">Contribute</a>
               </div>
               <div class="n-footer__copyright">
                 <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
@@ -508,42 +540,17 @@
 
     </div>
 
-    <script src="/kubernetes-service/en/common/js/components.js"></script>
-    <script src="/kubernetes-service/en/common/js/doc-components.js"></script>
+    <script src="/kubernetes-service/common/js/components.js"></script>
+    <script src="/kubernetes-service/common/js/doc-components.js"></script>
 
     <!-- Elasticsearch JS -->
-    <script type="text/javascript" src='/kubernetes-service/en/js/bundle.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/bundle.js'></script>
 
     <!-- Syntax Highlighting -->
-    <script type="text/javascript" src='/kubernetes-service/en/js/prism.js'></script>
-    <script type="text/javascript" src='/kubernetes-service/en/js/prism-curl.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/prism.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/prism-curl.js'></script>
 
   </body>
 
-  
-  <script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script>
   
 </html>

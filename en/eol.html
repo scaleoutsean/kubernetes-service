@@ -2,12 +2,12 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>Search results | NetApp Cloud Docs</title>
+  <title>StackPointCloud EOL Information | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Search results | NetApp Cloud Docs" />
+  <meta property="og:title" content="StackPointCloud EOL Information | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/en/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/en/eol.html" />
+	<meta property="og:description" content="More information on the StackPointCloud EOL." />
   <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/en/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation">
   <meta http-equiv="nss-subtype" content="User Guide">
   
-  <meta name="description" content="">
+  <meta name="description" content="More information on the StackPointCloud EOL.">
   <meta name="keywords" content=" ">
 
   <!-- Icons -->
@@ -60,7 +60,12 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
+    <script src='/kubernetes-service/en/js/na-search.js'></script>
+  
 
+  
+  <link rel='stylesheet' href='/kubernetes-service/en/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/kubernetes-service/en/js/na-pagenav.js'></script>
   
 
   <link rel='stylesheet' href='/kubernetes-service/en/css/prism.css' type='text/css'>
@@ -217,6 +222,10 @@
       </div>
 
       <!-- NetApp Search Bar -->
+      
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
       
 
       <div id="ie-i18n-menu" class="n-property-bar__utils">
@@ -408,8 +417,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results
+  <h1 class="n-doc__component-detail-heading">StackPointCloud EOL Information
     <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/blob/master/eol.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/issues/new?body=Page%3A%20[StackPointCloud EOL Information](https://docs.netapp.com/en/kubernetes-service/eol.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -417,18 +429,38 @@
 
 <p class="page-details">
 
-<time datetime="2019-04-19 19:49:13 +0000">04/19/2019</time>
+<time datetime="2019-04-19 19:47:54 +0000">04/19/2019</time>
 
+
+<span>Contributors
+  
+  <a target="_blank" href="https://github.com/ebarcott">
+    <img  class="avatar avatar-small"
+          alt="ebarcott"
+          width="20" height="20"
+          src="https://avatars3.githubusercontent.com/u/44878916?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
 
 </p>
 
-<div id="react-search"></div>
-
+<div class="paragraph">
+<p>Coming soon.</p>
+</div>
 
         </article>
         <!-- Page Container -->
       </div>
 
+      
+      <div class="page-nav-container">
+        <nav class="page-nav-fixed">
+          <div class="page-nav-title">On this page:</div>
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </nav>
+      </div>
       
 
     </div>
@@ -520,30 +552,5 @@
 
   </body>
 
-  
-  <script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script>
   
 </html>
