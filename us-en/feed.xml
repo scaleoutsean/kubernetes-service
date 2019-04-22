@@ -3,21 +3,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kubernetes-service | NetApp Cloud Docs</title>
-    <description>The latest updates from NetApp Cloud Docs</description>
+    <atom:link href="https://docs.netapp.com/kubernetes-service/us-en/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://docs.netapp.com/kubernetes-service/us-en</link>
+    <description>The latest updates from NetApp Cloud Docs</description>
     <language>en-us</language>
     <ttl>60</ttl>
-    <atom:link href="https://docs.netapp.com/kubernetes-service/us-en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Apr 2019 22:08:43 +0000</pubDate>
-    <lastBuildDate>Fri, 19 Apr 2019 22:08:43 +0000</lastBuildDate>
+    <pubDate>Mon, 22 Apr 2019 16:15:25 +0000</pubDate>
+    <lastBuildDate>Mon, 22 Apr 2019 16:15:25 +0000</lastBuildDate>
     
     
     
     <item>
       <title>What&amp;#8217;s New</title>
-      <description>News and updates for NetApp Kubernetes Service (NKS)</description>
       <pubDate>Thu, 18 Apr 2019 20:59:47 +0000</pubDate>
       <link>https://docs.netapp.com/us-en/kubernetes-service/news.html</link>
+      <guid isPermaLink="false">Thu, 18 Apr 2019 20:59:47 +0000</guid>
+      <description><![CDATA[ News and updates for NetApp Kubernetes Service (NKS) ]]></description>
     </item>
     
     
