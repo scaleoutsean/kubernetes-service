@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Search results | NetApp Cloud Docs</title>
+  <title>Create an Amazon Web Services (AWS) Cluster | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Search results | NetApp Cloud Docs" />
+  <meta property="og:title" content="Create an Amazon Web Services (AWS) Cluster | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/create-an-aws-cluster.html" />
+	<meta property="og:description" content="Documentation on how to create an AWS cluster using NetApp Kubernetes Service (NKS)." />
   <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="">
+  <meta name="description" content="Documentation on how to create an AWS cluster using NetApp Kubernetes Service (NKS).">
   <meta name="keywords" content=" ">
   
 
@@ -60,7 +60,12 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
+    <script src='/kubernetes-service/js/na-search.js'></script>
+  
 
+  
+  <link rel='stylesheet' href='/kubernetes-service/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/kubernetes-service/js/na-pagenav.js'></script>
   
 
   <link rel='stylesheet' href='/kubernetes-service/css/prism.css' type='text/css'>
@@ -207,6 +212,10 @@
         </a>
       </div>
 
+      
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
       
 
       <div id="ie-i18n-menu" class="n-property-bar__utils">
@@ -406,8 +415,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results
+  <h1 class="n-doc__component-detail-heading">Create an Amazon Web Services (AWS) Cluster
     <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/blob/master/create-an-aws-cluster.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/issues/new?body=Page%3A%20[Create an Amazon Web Services (AWS) Cluster](https://docs.netapp.com/us-en/kubernetes-service/create-an-aws-cluster.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -415,18 +427,139 @@
 
 <p class="page-details">
 
-<time datetime="2019-05-23 18:58:11 +0000">05/23/2019</time>
+<time datetime="2019-05-23 18:56:52 +0000">05/23/2019</time>
 
+
+<span>Contributors
+  
+  <a target="_blank" href="https://github.com/ebarcott">
+    <img  class="avatar avatar-small"
+          alt="ebarcott"
+          width="20" height="20"
+          src="https://avatars3.githubusercontent.com/u/44878916?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
 
 </p>
 
-<div id="react-search"></div>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Learn how to create a Kubernetes cluster on AWS in three clicks, using <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a>.</p>
+</div>
+<div class="paragraph">
+<p>To create an Amazon Web Services (AWS) cluster, you will need:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A set of AWS credentials.</p>
+</li>
+<li>
+<p>An NKS account.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more details, see <a href="https://docs.netapp.com/us-en/kubernetes-service/nks-requirements.html">our Requirements page</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-add-cluster">Step 1: Add Cluster</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Log in to <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> and click <strong>+ ADD CLUSTER</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/documentation/create-clusters/create-kubernetes-cluster-on-aws-01.png?raw=true" alt="Create Kubernetes Cluster on AWS">
+</div>
+</div>
+<div class="paragraph">
+<p>Click the <strong>AWS</strong> tile to select AWS as a provider.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="assets/documentation/create-clusters/create-kubernetes-cluster-on-aws-02.png?raw=true" alt="Create Kubernetes Cluster on AWS">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-provider-configuration">Step 2: Provider Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this step, you will set your provider configurations. Here you can update any of the following if you wish:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Number and size of master and worker nodes.</p>
+</li>
+<li>
+<p>Zone, VPC, and subnet.</p>
+</li>
+<li>
+<p>NKS workspace.</p>
+</li>
+<li>
+<p>GPU support. Click to add the power of NVIDIA Tesla GPUs to your cluster.</p>
+</li>
+<li>
+<p>AWS credentials.</p>
+</li>
+<li>
+<p>SSH keypair.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If everything looks good, click <strong>Submit</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-cluster-configuration">Step 3: Cluster Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the third and final step, you can make any desired changes to your cluster configuration:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the cluster name.</p>
+</li>
+<li>
+<p>Change the Kubernetes version.</p>
+</li>
+<li>
+<p>Change the OS distribution.</p>
+</li>
+<li>
+<p>Add Solutions to the cluster from our solutions gallery, trusted charts, or add your own Helm chart repo.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When your cluster configurations are ready, click <strong>Submit</strong>. Your cluster will begin building, and will be ready for use within minutes.</p>
+</div>
+</div>
+</div>
 
         </article>
         <!-- Page Container -->
       </div>
 
+      
+      <div class="page-nav-container">
+        <nav class="page-nav-fixed">
+          <div class="page-nav-title">On this page:</div>
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </nav>
+      </div>
       
 
     </div>
@@ -518,30 +651,5 @@
 
   </body>
 
-  
-  <script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script>
   
 </html>
