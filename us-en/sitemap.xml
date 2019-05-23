@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/a-sysdig-kubernetes-adventure.html</loc>
       
-        <lastmod>2019-01-22T20:13:39+00:00</lastmod>
+        <lastmod>2019-01-22T20:16:19+00:00</lastmod>
       
     </url>
   
@@ -155,7 +155,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/</loc>
       
-        <lastmod>2019-05-17T19:07:03+00:00</lastmod>
+        <lastmod>2019-05-23T18:47:04+00:00</lastmod>
       
     </url>
   
@@ -181,9 +181,16 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/nks-requirements.html</loc>
+      
+        <lastmod>2019-05-23T18:47:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service//search.html</loc>
       
-        <lastmod>2019-05-17T19:08:28+00:00</lastmod>
+        <lastmod>2019-05-23T18:48:19+00:00</lastmod>
       
     </url>
   
