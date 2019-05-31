@@ -1,8 +1,6 @@
 ---
 sidebar: sidebar
-
-permalink: create-aws-cluster.html
-
+permalink: create-an-aws-cluster.html
 summary: Documentation on how to create an AWS cluster using NetApp Kubernetes Service (NKS).
 ---
 
@@ -12,7 +10,7 @@ Learn how to create a Kubernetes cluster on AWS in three clicks, using https://n
 
 To create an Amazon Web Services (AWS) cluster, you will need:
 
-* A set of AWS credentials. https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-aws.html[Find your Amazon Web Services (AWS) Credentials].
+* A set of AWS credentials.
 * An NKS account.
 
 For more details, see https://docs.netapp.com/us-en/kubernetes-service/nks-requirements.html[our Requirements page].
@@ -38,9 +36,7 @@ In this step, you will set your provider configurations. Here you can update any
 * AWS credentials.
 * SSH keypair.
 
-image::assets/documentation/create-clusters/create-kubernetes-cluster-on-aws-03.png?raw=true[Create Kubernetes Cluster on AWS]
-
-If everything looks good, scroll down and click **Submit**.
+If everything looks good, click **Submit**.
 
 == Step 3: Cluster Configuration
 
@@ -50,7 +46,5 @@ On the third and final step, you can make any desired changes to your cluster co
 * Change the Kubernetes version.
 * Change the OS distribution.
 * Add Solutions to the cluster from our solutions gallery, trusted charts, or add your own Helm chart repo.
-
-image::assets/documentation/create-clusters/create-kubernetes-cluster-on-aws-04.png?raw=true[Create Kubernetes Cluster on AWS]
 
 When your cluster configurations are ready, click **Submit**. Your cluster will begin building, and will be ready for use within minutes.
