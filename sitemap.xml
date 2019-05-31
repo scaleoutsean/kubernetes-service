@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/a-sysdig-kubernetes-adventure.html</loc>
       
-        <lastmod>2019-01-24T16:52:46+00:00</lastmod>
+        <lastmod>2019-01-24T17:34:40+00:00</lastmod>
       
     </url>
   
@@ -111,6 +111,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-aks-cluster.html</loc>
+      
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/create-an-aws-cluster.html</loc>
       
         <lastmod>2019-05-23T18:56:52+00:00</lastmod>
@@ -134,14 +141,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-gce.html</loc>
       
-        <lastmod>2019-03-15T17:36:04+00:00</lastmod>
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-gke.html</loc>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-gce.html</loc>
       
-        <lastmod>2019-03-15T17:36:04+00:00</lastmod>
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
       
     </url>
   
@@ -149,6 +156,34 @@
       <loc>https://docs.netapp.com/us-en/kubernetes-service/create-aws-cluster.html</loc>
       
         <lastmod>2019-05-30T18:06:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-an-azure-cluster.html</loc>
+      
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-eks-cluster.html</loc>
+      
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-a-gce-cluster.html</loc>
+      
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/create-gke-cluster.html</loc>
+      
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
       
     </url>
   
@@ -169,7 +204,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/</loc>
       
-        <lastmod>2019-05-23T18:47:04+00:00</lastmod>
+        <lastmod>2019-05-31T17:20:16+00:00</lastmod>
       
     </url>
   
@@ -204,7 +239,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service//search.html</loc>
       
-        <lastmod>2019-05-30T18:07:35+00:00</lastmod>
+        <lastmod>2019-05-31T17:21:30+00:00</lastmod>
       
     </url>
   
@@ -218,7 +253,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/upgrade-to-the-newest-version-of-kubernetes.html</loc>
       
-        <lastmod>2019-01-24T16:52:46+00:00</lastmod>
+        <lastmod>2019-01-24T17:34:40+00:00</lastmod>
       
     </url>
   
