@@ -24,11 +24,12 @@ NetApp Kubernetes Service (NKS) is a universal control plane for creating and ma
 == Create a Cluster
 
 * link:create-aws-cluster.html[Create an Amazon Web Services (AWS) Cluster]
-* link:create-aks-cluster.html[Create an Amazon AKS Cluster]
+* link:create-eks-cluster.html[Create an Amazon EKS Cluster]
 * link:create-azure-cluster.html[Create an Azure Cluster]
-* link:create-eks-cluster.html[Create a Microsoft EKS Cluster]
+* link:create-aks-cluster.html[Create a Microsoft AKS Cluster]
 * link:create-gce-cluster.html[Create a Google Compute Engine (GCE) Cluster]
 * link:create-gke-cluster.html[Create a Google Kubernetes Engine (GKE) Cluster]
+
 
 == API
 

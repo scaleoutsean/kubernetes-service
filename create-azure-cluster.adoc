@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: create-an-azure-cluster.html
+permalink: create-azure-cluster.html
 summary: Documentation on how to create an Azure cluster using NetApp Kubernetes Service (NKS).
 ---
 

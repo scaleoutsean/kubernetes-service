@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: create-a-gce-cluster.html
+permalink: create-gce-cluster.html
 summary: Documentation on how to create a GCE cluster using NetApp Kubernetes Service (NKS).
 ---
 
