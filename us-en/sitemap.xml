@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/a-sysdig-kubernetes-adventure.html</loc>
       
-        <lastmod>2019-01-24T23:33:51+00:00</lastmod>
+        <lastmod>2019-01-31T17:58:51+00:00</lastmod>
       
     </url>
   
@@ -274,7 +274,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service//search.html</loc>
       
-        <lastmod>2019-06-07T21:16:38+00:00</lastmod>
+        <lastmod>2019-06-07T23:26:10+00:00</lastmod>
       
     </url>
   
@@ -282,6 +282,13 @@
       <loc>https://docs.netapp.com/us-en/kubernetes-service/intro-to-terraform-on-nks.html</loc>
       
         <lastmod>2019-04-02T18:38:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/upgrade-kubernetes-on-an-nks-cluster.html</loc>
+      
+        <lastmod>2019-06-07T23:24:47+00:00</lastmod>
       
     </url>
   
