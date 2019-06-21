@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/a-sysdig-kubernetes-adventure.html</loc>
       
-        <lastmod>2019-01-31T18:04:58+00:00</lastmod>
+        <lastmod>2019-01-31T18:11:27+00:00</lastmod>
       
     </url>
   
@@ -78,7 +78,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/api-federations.html</loc>
       
-        <lastmod>2019-04-17T19:44:33+00:00</lastmod>
+        <lastmod>2019-06-21T16:39:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/api-invoice.html</loc>
+      
+        <lastmod>2019-06-21T16:39:59+00:00</lastmod>
       
     </url>
   
@@ -114,6 +121,13 @@
       <loc>https://docs.netapp.com/us-en/kubernetes-service/api-organizations.html</loc>
       
         <lastmod>2019-03-15T17:36:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/kubernetes-service/api-subscription.html</loc>
+      
+        <lastmod>2019-06-21T16:39:59+00:00</lastmod>
       
     </url>
   
@@ -239,7 +253,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service/</loc>
       
-        <lastmod>2019-06-14T16:15:38+00:00</lastmod>
+        <lastmod>2019-06-21T16:39:59+00:00</lastmod>
       
     </url>
   
@@ -274,7 +288,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/kubernetes-service//search.html</loc>
       
-        <lastmod>2019-06-14T16:16:57+00:00</lastmod>
+        <lastmod>2019-06-21T16:41:17+00:00</lastmod>
       
     </url>
   

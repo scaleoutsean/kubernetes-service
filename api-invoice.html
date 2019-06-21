@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Using the Kubernetes Cloud Backup | NetApp Cloud Docs</title>
+  <title>Invoice | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Using the Kubernetes Cloud Backup | NetApp Cloud Docs" />
+  <meta property="og:title" content="Invoice | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/us-en/using-the-kubernetes-cloud-backup.html" />
-	<meta property="og:description" content="Learn how to install Kubernetes Cloud Backup, and how to restore a Kubernetes cluster from backup." />
-  <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/us-en/images/logo-tophat-social.png" />
+	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/api-invoice.html" />
+	<meta property="og:description" content="How to use the Invoice API resource for the NKS API." />
+  <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -17,16 +17,16 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Learn how to install Kubernetes Cloud Backup, and how to restore a Kubernetes cluster from backup.">
+  <meta name="description" content="How to use the Invoice API resource for the NKS API.">
   <meta name="keywords" content=" ">
   
 
   <!-- Icons -->
-  <link rel="icon" href="/kubernetes-service/us-en/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/kubernetes-service/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed -->
   
-  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/kubernetes-service/us-en/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/kubernetes-service/feed.xml">
   
 
   <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -35,23 +35,23 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
   <!-- LUCI CSS Content -->
-  <link rel="stylesheet" href="/kubernetes-service/us-en/common/css/esb.min.css">
-  <link rel="stylesheet" href="/kubernetes-service/us-en/common/css/netapp-library.min.css">
-  <link rel="stylesheet" href="/kubernetes-service/us-en/common/css/doc.css">
-  <link rel="stylesheet" href="/kubernetes-service/us-en/common/css/doc-components.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/esb.min.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/doc.css">
+  <link rel="stylesheet" href="/kubernetes-service/common/css/doc-components.css">
 
-  <link rel="stylesheet" href='/kubernetes-service/us-en/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/na-search.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/clouddocs.css' type='text/css'>
+  <link rel="stylesheet" href='/kubernetes-service/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/clouddocs.css' type='text/css'>
 
   <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
-  <link rel="stylesheet" type="text/css" href="/kubernetes-service/us-en/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="/kubernetes-service/us-en/css/customstyles.css"> -->
+  <link rel="stylesheet" type="text/css" href="/kubernetes-service/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/kubernetes-service/css/customstyles.css"> -->
   <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/kubernetes-service/us-en/css/boxshadowproperties.css">
+  <link rel="stylesheet" href="/kubernetes-service/css/boxshadowproperties.css">
 
   <!-- NetApp CSS controls the technical content -->
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/netapp.css' type='text/css'>
 
   
 
@@ -60,23 +60,23 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
-    <script src='/kubernetes-service/us-en/js/na-search.js'></script>
+    <script src='/kubernetes-service/js/na-search.js'></script>
   
 
   
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/na-pagenav.css' type='text/css' id="pagenav-css">
-  <script src='/kubernetes-service/us-en/js/na-pagenav.js'></script>
+  <link rel='stylesheet' href='/kubernetes-service/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/kubernetes-service/js/na-pagenav.js'></script>
   
 
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/kubernetes-service/us-en/css/prism-netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/kubernetes-service/css/prism-netapp.css' type='text/css'>
 
-  <script src='/kubernetes-service/us-en/js/clouddocs.js'></script>
-  <script src='/kubernetes-service/us-en/js/s_code_impl.js'></script>
-  <script src='/kubernetes-service/us-en/js/jquery.navgoco.min.js'></script>
+  <script src='/kubernetes-service/js/clouddocs.js'></script>
+  <script src='/kubernetes-service/js/s_code_impl.js'></script>
+  <script src='/kubernetes-service/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/kubernetes-service/us-en/js/toc.js'></script>
-  <script src='/kubernetes-service/us-en/js/customscripts.js'></script>
+  <script src='/kubernetes-service/js/toc.js'></script>
+  <script src='/kubernetes-service/js/customscripts.js'></script>
 
   <script>
       $(document).ready(function() {
@@ -193,7 +193,7 @@
       <div class="n-property-bar__menu-toggle">
         <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
           <title>bars</title>
-          <use xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#bars"></use>
+          <use xlink:href="/kubernetes-service/common/svg/sprite.svg#bars"></use>
         </svg></a>
       </div>
       <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
@@ -201,11 +201,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/kubernetes-service/common/svg/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-property-bar__logo-svg" aria-labelledby="title">
               <title>NetApp</title>
-              <use xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/kubernetes-service/common/svg/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
           <h2 class="n-property-bar__property-name">Cloud Docs</h2>
@@ -225,7 +225,7 @@
               <span class="ie-i18n-lang">English</span>
               <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title">
                 <title>globe</title>
-                <use xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
+                <use xlink:href="/kubernetes-service/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
               </svg>
             </a>
           </li>
@@ -366,7 +366,7 @@
   
 
   
-    <li class="active"><a href="using-the-kubernetes-cloud-backup.html">Using the Kubernetes Cloud Backup</a></li>
+    <li><a href="using-the-kubernetes-cloud-backup.html">Using the Kubernetes Cloud Backup</a></li>
   
 
   
@@ -493,11 +493,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Using the Kubernetes Cloud Backup
+  <h1 class="n-doc__component-detail-heading">Invoice
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/blob/master/using-the-kubernetes-cloud-backup.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/issues/new?body=Page%3A%20[Using the Kubernetes Cloud Backup](https://docs.netapp.com/us-en/kubernetes-service/using-the-kubernetes-cloud-backup.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/blob/master/api-invoice.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/kubernetes-service/issues/new?body=Page%3A%20[Invoice](https://docs.netapp.com/us-en/kubernetes-service/api-invoice.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-21 16:39:59 +0000">06/21/2019</time>
 
 
 <span>Contributors
@@ -522,114 +522,315 @@
 
 </p>
 
-<div class="sect1">
-<h2 id="contents">Contents</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#introduction">Introduction</a></p>
-</li>
-<li>
-<p><a href="#install-the-kubernetes-cloud-backup">Install the Kubernetes Cloud Backup</a></p>
-</li>
-<li>
-<p><a href="#restore-a-kubernetes-cluster-from-backup">Restore a Kubernetes Cluster from Backup</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>View the current invoice(s) available for the specified user account. Invoices cannot be created, updated, or deleted through the API.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="introduction">Introduction</h2>
+<h2 id="get-all-invoices">GET All Invoices</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Kubernetes Cloud Backup can be used to backup and restore your <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> Kubernetes state information.  This includes deployments, services, Helm release, et cetera. This tutorial covers how to install Kubernetes Cloud Backup, and how to restore a Kubernetes cluster from backup.</p>
+<p>Get the details for all unpaid invoices for the user account specified by the API token.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>The Kubernetes state cloud backup script is designed to be run as a cron job.</p>
-</li>
-<li>
-<p>Each backup has a <code>restore_state.sh</code> script, which will restore the entire cluster&#8217;s state when run.</p>
-</li>
-</ul>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/user/invoices</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Example request:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
+-H "Authorization: Bearer abcdef123456789abcdef123456789" \
+"https://api.nks.netapp.io/user/invoices"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example response: Note, If there are no unpaid invoices, an empty response is returned.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">[
+  {
+  "pk": 25,
+  "identifier": "NKS-G418VQ3Z75",
+  "org": 352,
+  "org_name": "Divine Dawn",
+  "is_oem": false,
+  "billing_method": "send_invoice",
+  "start_time": "2019-03-01T00:00:00Z",
+  "end_time": "2019-03-31T23:59:59.999999Z",
+  "state": "void",
+  "status_display": "Void",
+  "amount_due": 19.57,
+  "created": "2019-04-01T01:00:00.256132Z",
+  "line_items": [
+
+  ],
+  "billing_period": "March 2019",
+  "is_payable": true,
+  "is_auto_charge": false
+  },
+  {
+    "pk": 74,
+    "identifier": "NKS-V1149AXWQK",
+    "org": 352,
+    "org_name": "Divine Dawn",
+    "is_oem": false,
+    "billing_method": "send_invoice",
+    "start_time": "2019-05-01T00:00:00Z",
+    "end_time": "2019-05-31T23:59:59.999999Z",
+    "state": "void",
+    "status_display": "Void",
+    "amount_due": 49.95,
+    "created": "2019-06-01T01:00:00.310167Z",
+    "line_items": [
+
+    ],
+    "billing_period": "May 2019",
+    "is_payable": true,
+    "is_auto_charge": false
+  }
+]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Return Values</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>pk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice ID.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifier</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internal system ID for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>org</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ID of the invoice&#8217;s Organization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>org_name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the invoice&#8217;s Organization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_oem</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not this is an OEM account, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>billing_method</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The method of billing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>start_time</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s start time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>end_time</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s end time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>state</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice&#8217;s current status.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>status_display</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How the invoice&#8217;s current status is displayed on the site.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>amount_due</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The amount due for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>created</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s creation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>line_items</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An array containing the billing items for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>billing_period</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period covered by the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_payable</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not the invoice is payable, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_auto_charge</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not the invoice is being auto-billed, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="install-the-kubernetes-cloud-backup">Install the Kubernetes Cloud Backup</h2>
+<h2 id="get-a-specific-invoice">GET A Specific Invoice</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To set up the backup solution for the cluster, use the Helm chart and deploy it to Kubernetes as a cron job. This will ensure cluster backups of Kubernetes resource definitions to your AWS S3 or GCS bucket.</p>
+<p>Get the details for a specific invoice.</p>
 </div>
-<div class="sect2">
-<h3 id="aws-s3">AWS S3</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>    bash
-    helm upgrade --install kube-backup kube-state-backup --namespace kube-backup \
-        --set schedule="*/50 * * * *",aws.enabled="true" \
-        --set  aws.accessKeyId="ABCDEFG12345678",aws.secretAccessKey="AaBbCcDdEeFfGg123456789" \
-        --set aws.bucket="my-kube-state-backup-bucket",aws.region="eu-west-2"</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="gcs">GCS</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>    bash
-    helm upgrade --install kube-backup kube-state-backup --namespace kube-backup \
-        --set schedule="*/50 * * * *",gcs.enabled="true",gcs.projectId="project-123" \
-        --set gcs.serviceAccountKey="$(cat sa.json | base64)" \
-        --set gcs.bucket="my-kube-state-backup",gcs.region="eu"</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="azure">Azure</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>    bash
-    helm upgrade --install spc-kube-backup spc-state-backup --namespace stackpoint-system \
-        --set schedule="*/50 * * * *",azure.enabled="true",storageAccount="azure_storage_account" \
-        --set azure.storageAccessKey="ABCDEFG12345678" \
-        --set azure.storageContainer="my-kube-state-backup-container" \
-        --set jobCleanup.enabled="true" # set it only for k8s v1.5</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="update-the-cron-job">Update the Cron Job</h3>
 <div class="paragraph">
-<p>You can also use the <code>helm upgrade</code> command to update the cron job. For example, to change the schedule:</p>
+<p><strong>Path Parameter</strong></p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Invoice ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice ID.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>    bash
-    helm upgrade kube-backup kube-state-backup --reuse-values --set schedule="*/30 * * * *"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/user/invoices/[Invoice ID]</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To change the Docker image:</p>
+<p>Example request:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>    bash
-    helm upgrade kube-backup kube-state-backup --reuse-values --set imageTag="0.1.8"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
+-H "Authorization: Bearer abcdef123456789abcdef123456789" \
+"https://api.nks.netapp.io/user/invoices/25"</code></pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="restore-a-kubernetes-cluster-from-backup">Restore a Kubernetes Cluster from Backup</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>To restore from backup, download the backup archive from your cloud storage, extract files and run the <code>restore_state.sh</code> shell script on the freshly-created cluster. This will restore your cluster. Note: kubectl must be present and set to access your Kubernetes cluster.</p>
+<p>Example response:</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">[
+  {
+  "pk": 25,
+  "identifier": "NKS-G418VQ3Z75",
+  "org": 352,
+  "org_name": "Divine Dawn",
+  "is_oem": false,
+  "billing_method": "send_invoice",
+  "start_time": "2019-03-01T00:00:00Z",
+  "end_time": "2019-03-31T23:59:59.999999Z",
+  "state": "void",
+  "status_display": "Void",
+  "amount_due": 19.57,
+  "created": "2019-04-01T01:00:00.256132Z",
+  "line_items": [
+
+  ],
+  "billing_period": "March 2019",
+  "is_payable": true,
+  "is_auto_charge": false
+  }
+]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Return Values</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>pk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice ID.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifier</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internal system ID for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>org</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ID of the invoice&#8217;s Organization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>org_name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the invoice&#8217;s Organization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_oem</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not this is an OEM account, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>billing_method</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The method of billing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>start_time</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s start time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>end_time</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s end time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>state</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice&#8217;s current status.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>status_display</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How the invoice&#8217;s current status is displayed on the site.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>amount_due</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The amount due for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>created</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the invoice&#8217;s creation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>line_items</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An array containing the billing items for the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>billing_period</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period covered by the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_payable</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not the invoice is payable, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is_auto_charge</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether or not the invoice is being auto-billed, <code>true</code> or <code>false</code>.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -674,7 +875,7 @@
                       <span class="n-footer__social-link-text">blog</span>
                       <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                         <title>blog@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#blog"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#blog"></use>
                       </svg>
                     </a>
                   </li>
@@ -683,7 +884,7 @@
                       <span class="n-footer__social-link-text">community</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>community@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#comments"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#comments"></use>
                       </svg>
                     </a>
                   </li>
@@ -693,7 +894,7 @@
                       <span class="n-footer__social-link-text">twitter</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>twitter@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#twitter"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -702,7 +903,7 @@
                       <span class="n-footer__social-link-text">youtube</span>
                       <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                         <title>youtube@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/us-en/common/svg/sprite.svg#youtube"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/kubernetes-service/common/svg/sprite.svg#youtube"></use>
                       </svg>
                     </a>
                   </li>
@@ -723,15 +924,15 @@
 
     </div>
 
-    <script src="/kubernetes-service/us-en/common/js/components.js"></script>
-    <script src="/kubernetes-service/us-en/common/js/doc-components.js"></script>
+    <script src="/kubernetes-service/common/js/components.js"></script>
+    <script src="/kubernetes-service/common/js/doc-components.js"></script>
 
     <!-- Elasticsearch JS -->
-    <script type="text/javascript" src='/kubernetes-service/us-en/js/bundle.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/bundle.js'></script>
 
     <!-- Syntax Highlighting -->
-    <script type="text/javascript" src='/kubernetes-service/us-en/js/prism.js'></script>
-    <script type="text/javascript" src='/kubernetes-service/us-en/js/prism-curl.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/prism.js'></script>
+    <script type="text/javascript" src='/kubernetes-service/js/prism-curl.js'></script>
 
   </body>
 
