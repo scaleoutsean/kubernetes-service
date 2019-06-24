@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-06-21 16:39:59 +0000">06/21/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -571,7 +571,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/federations</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/federations</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -581,7 +581,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/federations"</code></pre>
+"https://api.nks.netapp.io/orgs/3/federations"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1034,7 +1034,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/federations/{Federation ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/federations/{Federation ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1044,7 +1044,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/federations/103"</code></pre>
+"https://api.nks.netapp.io/orgs/3/federations/103"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1497,7 +1497,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.stackpoint.io/orgs/{Org ID}/federations/{Federation ID}/roles</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.nks.netapp.io/orgs/{Org ID}/federations/{Federation ID}/roles</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1509,7 +1509,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d @add-guest.json \
-"https://api.stackpoint.io/orgs/3/federations/103/roles"</code></pre>
+"https://api.nks.netapp.io/orgs/3/federations/103/roles"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1843,7 +1843,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.stackpoint.io/orgs/{Org ID}/workspaces/{Workspace ID}/federations</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.nks.netapp.io/orgs/{Org ID}/workspaces/{Workspace ID}/federations</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1855,7 +1855,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -H "Content-Type: application/json" \
 -d @create-aws-federation.json \
-"https://api.stackpoint.io/orgs/1/workspaces/11/federations"</code></pre>
+"https://api.nks.netapp.io/orgs/1/workspaces/11/federations"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2398,7 +2398,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.stackpoint.io/orgs/{Org ID}/federations/{Federation ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.nks.netapp.io/orgs/{Org ID}/federations/{Federation ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2408,7 +2408,7 @@ Use of Federation v1 is strongly discouraged. Federation V1 never achieved GA st
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/federations/103"</code></pre>
+"https://api.nks.netapp.io/orgs/3/federations/103"</code></pre>
 </div>
 </div>
 <div class="paragraph">

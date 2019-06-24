@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Manage members for your <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> Organizations, Teams, and Workspaces.</p>
+<p>Manage members for your Organizations, Teams, and Workspaces.</p>
 </div>
 </div>
 </div>
@@ -559,7 +559,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/members</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/members</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -569,7 +569,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/members"</code></pre>
+"https://api.nks.netapp.io/orgs/3/members"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -783,7 +783,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/members/{Member ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/members/{Member ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -793,7 +793,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/members/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3/members/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1000,7 +1000,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">https://api.stackpoint.io/orgs/{Org ID}/invites</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">https://api.nks.netapp.io/orgs/{Org ID}/invites</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1008,7 +1008,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">curl 'https://api.stackpoint.io/orgs/3/invites' \
+<pre class="highlight"><code class="language-shell" data-lang="shell">curl 'https://api.nks.netapp.io/orgs/3/invites' \
 -H 'Content-Type: application/json;charset=UTF-8' \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d '[{"name":"J Doe","email":"jdoe@example.com","role":"member","teams":[]}]' \
@@ -1142,7 +1142,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.stackpoint.io/orgs/{Org ID}/members/{Member ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.nks.netapp.io/orgs/{Org ID}/members/{Member ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1152,7 +1152,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/members/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3/members/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">

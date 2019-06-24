@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the NetApp Kubernetes Service (NKS) API Reference. This section guides you through the setup process of creating an NKS API token, passing the token in your API requests, and the response codes returned by the API.</p>
+<p>Welcome to the NKS API Reference. This section guides you through the setup process of creating an NKS API token, passing the token in your API requests, and the response codes returned by the API.</p>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@
 <h2 id="resource-url">Resource URL</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The full resource URL for the NKS API is <code><a href="https://api.stackpoint.io" class="bare">https://api.stackpoint.io</a></code>.</p>
+<p>The full resource URL for the NKS API is <code><a href="https://api.nks.netapp.io" class="bare">https://api.nks.netapp.io</a></code>.</p>
 </div>
 </div>
 </div>
@@ -546,7 +546,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Register or log in at <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a>.</p>
+<p>Register or log in at <a href="https://nks.netapp.io">NKS</a>.</p>
 </li>
 <li>
 <p>Click your profile avatar in the top right corner and select <code>Edit Profile</code>.</p>
@@ -580,7 +580,7 @@ The API only accepts keys from accounts which have the role of <code>Owner</code
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdev123456789" \
-"https://api.stackpoint.io/orgs"</code></pre>
+"https://api.nks.netapp.io/orgs"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -612,7 +612,7 @@ The API only accepts keys from accounts which have the role of <code>Owner</code
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer {API token}" \
-"https://api.stackpoint.io/orgs/{Org ID}/clusters"</code></pre>
+"https://api.nks.netapp.io/orgs/{Org ID}/clusters"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -625,7 +625,7 @@ The API only accepts keys from accounts which have the role of <code>Owner</code
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdev123456789" \
-"https://api.stackpoint.io/orgs/381/clusters"</code></pre>
+"https://api.nks.netapp.io/orgs/381/clusters"</code></pre>
 </div>
 </div>
 </div>
@@ -642,7 +642,7 @@ The API only accepts keys from accounts which have the role of <code>Owner</code
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -i -X PATCH \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdev123456789" \
--d @updateorg.json "https://api.stackpoint.io/orgs/381"</code></pre>
+-d @updateorg.json "https://api.nks.netapp.io/orgs/381"</code></pre>
 </div>
 </div>
 <div class="paragraph">

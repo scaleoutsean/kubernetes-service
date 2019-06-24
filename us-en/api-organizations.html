@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -526,7 +526,7 @@
 <h2 id="overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Organizations are the highest-level resource in the <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> API. The Organizations resource contains information about the Organization. This includes the ID, which is required for most other API calls.</p>
+<p>Organizations are the highest-level resource. The Organizations resource contains information about the Organization. This includes the ID, which is required for most other API calls.</p>
 </div>
 <div class="sect2">
 <h3 id="background">Background</h3>
@@ -544,7 +544,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -554,7 +554,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs"</code></pre>
+"https://api.nks.netapp.io/orgs"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -657,7 +657,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -667,7 +667,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2"</code></pre>
+"https://api.nks.netapp.io/orgs/2"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -736,7 +736,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.stackpoint.io/orgs/</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.nks.netapp.io/orgs/</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -748,7 +748,7 @@
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d @postorg.json \
-"https://api.stackpoint.io/orgs"</code></pre>
+"https://api.nks.netapp.io/orgs"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -885,7 +885,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.stackpoint.io/orgs/{Org ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.nks.netapp.io/orgs/{Org ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -897,7 +897,7 @@
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d @postorg.json \
-"https://api.stackpoint.io/orgs/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -919,7 +919,7 @@
 -H "Content-Type: multipart/form-data" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -F name="New Organization Name" \
-"https://api.stackpoint.io/orgs/2"</code></pre>
+"https://api.nks.netapp.io/orgs/2"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -946,7 +946,7 @@
 -H "Content-Type: multipart/form-data" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -F logo=@/path/to/file.jpg \
-"https://api.stackpoint.io/orgs/2"</code></pre>
+"https://api.nks.netapp.io/orgs/2"</code></pre>
 </div>
 </div>
 <div class="paragraph">

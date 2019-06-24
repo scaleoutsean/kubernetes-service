@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Clusters resource lets you create, manage, and delete Kubernetes clusters on the <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> system.</p>
+<p>The Clusters resource lets you create, manage, and delete Kubernetes clusters on the NKS system.</p>
 </div>
 <div class="paragraph">
 <p>Clusters are scoped under Organizations as well as Workspaces.</p>
@@ -562,7 +562,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.stackpoint.io/orgs/{Org ID}/clusters"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.nks.netapp.io/orgs/{Org ID}/clusters"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -572,7 +572,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2/clusters"</code></pre>
+"https://api.nks.netapp.io/orgs/2/clusters"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -743,7 +743,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -753,7 +753,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2/clusters/45"</code></pre>
+"https://api.nks.netapp.io/orgs/2/clusters/45"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -942,7 +942,7 @@ The cluster creation request varies slightly between providers.&lt;/aside&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -950,7 +950,7 @@ The cluster creation request varies slightly between providers.&lt;/aside&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/workspaces/{Workspace ID}/clusters"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/workspaces/{Workspace ID}/clusters"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1146,7 +1146,7 @@ channel</p></td>
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d @create-aws-cluster.json \
-https://api.stackpoint.io/orgs/3/clusters</code></pre>
+https://api.nks.netapp.io/orgs/3/clusters</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1334,7 +1334,7 @@ https://api.stackpoint.io/orgs/3/clusters</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1344,7 +1344,7 @@ https://api.stackpoint.io/orgs/3/clusters</code></pre>
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-https://api.stackpoint.io/orgs/3/clusters/1</code></pre>
+https://api.nks.netapp.io/orgs/3/clusters/1</code></pre>
 </div>
 </div>
 <div class="paragraph">

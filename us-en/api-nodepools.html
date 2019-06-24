@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Node pools are used to manage <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> worker nodes with common properties.</p>
+<p>Node pools are used to manage worker nodes with common properties.</p>
 </div>
 <div class="paragraph">
 <p>Each cluster gets a default node pool when it is created. Master nodes are stand-alone and do not belong to pools.</p>
@@ -567,7 +567,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -577,7 +577,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-https://api.stackpoint.io/orgs/3/clusters/2/nodepools</code></pre>
+https://api.nks.netapp.io/orgs/3/clusters/2/nodepools</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -784,7 +784,7 @@ https://api.stackpoint.io/orgs/3/clusters/2/nodepools</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -794,7 +794,7 @@ https://api.stackpoint.io/orgs/3/clusters/2/nodepools</code></pre>
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-https://api.stackpoint.io/orgs/3/clusters/2/nodepools/2</code></pre>
+https://api.nks.netapp.io/orgs/3/clusters/2/nodepools/2</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -994,7 +994,7 @@ https://api.stackpoint.io/orgs/3/clusters/2/nodepools/2</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1111,7 +1111,7 @@ https://api.stackpoint.io/orgs/3/clusters/2/nodepools/2</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1124,7 +1124,7 @@ https://api.stackpoint.io/orgs/3/clusters/2/nodepools/2</code></pre>
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d @add-node-pool.json \
-https://api.stackpoint.io/orgs/1/clusters/2/nodepools</code></pre>
+https://api.nks.netapp.io/orgs/1/clusters/2/nodepools</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1220,7 +1220,7 @@ https://api.stackpoint.io/orgs/1/clusters/2/nodepools</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1233,7 +1233,7 @@ https://api.stackpoint.io/orgs/1/clusters/2/nodepools</code></pre>
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d @enable-node-pool-autoscaling.json \
-https://api.stackpoint.io/orgs/1/clusters/2/nodepools/4</code></pre>
+https://api.nks.netapp.io/orgs/1/clusters/2/nodepools/4</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1287,7 +1287,7 @@ https://api.stackpoint.io/orgs/1/clusters/2/nodepools/4</code></pre>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodepools/{Node Pool ID}"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1300,7 +1300,7 @@ https://api.stackpoint.io/orgs/1/clusters/2/nodepools/4</code></pre>
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d @disable-node-pool-autoscaling.json \
-https://api.stackpoint.io/orgs/1/clusters/2/nodepools/4</code></pre>
+https://api.nks.netapp.io/orgs/1/clusters/2/nodepools/4</code></pre>
 </div>
 </div>
 <div class="paragraph">

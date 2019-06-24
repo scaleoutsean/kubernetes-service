@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -526,7 +526,7 @@
 <h2 id="overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Teams allow you to organize your <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> users into groups, in order to manage their access rights.</p>
+<p>Teams allow you to organize your users into groups, in order to manage their access rights.</p>
 </div>
 </div>
 </div>
@@ -562,7 +562,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/teams</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/teams</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -572,7 +572,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/teams"</code></pre>
+"https://api.nks.netapp.io/orgs/3/teams"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -710,7 +710,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -720,7 +720,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/teams/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3/teams/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -829,7 +829,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.stackpoint.io/orgs/{Org ID}/teams</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.nks.netapp.io/orgs/{Org ID}/teams</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -841,7 +841,7 @@
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d @add-team.json \
-"https://api.stackpoint.io/orgs/3/teams"</code></pre>
+"https://api.nks.netapp.io/orgs/3/teams"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1005,7 +1005,7 @@ You must include ALL users in your request, not just the new user. The contents 
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.stackpoint.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.nks.netapp.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1029,7 +1029,7 @@ See warning above about adding additional users.
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -d @add-team-member.json \
-"https://api.stackpoint.io/orgs/3/teams/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3/teams/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1234,7 +1234,7 @@ See warning above about adding additional users.
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.stackpoint.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.nks.netapp.io/orgs/{Org ID}/teams/{Team ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1244,7 +1244,7 @@ See warning above about adding additional users.
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/teams/3"</code></pre>
+"https://api.nks.netapp.io/orgs/3/teams/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">

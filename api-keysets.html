@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Keysets are credentials used by the <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> system to provision clusters, add nodes, or install applications. Keysets are scoped by organization.</p>
+<p>Keysets are credentials used by the system to provision clusters, add nodes, or install applications. Keysets are scoped by organization.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -583,7 +583,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/keysets</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/keysets</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -593,7 +593,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2/keysets"</code></pre>
+"https://api.nks.netapp.io/orgs/2/keysets"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -742,7 +742,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -752,7 +752,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2/keysets/3"</code></pre>
+"https://api.nks.netapp.io/orgs/2/keysets/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -881,7 +881,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.stackpoint.io/orgs/{Org ID}/keysets</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST https://api.nks.netapp.io/orgs/{Org ID}/keysets</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -893,7 +893,7 @@ For VCS keysets, only GET and DELETE are allowed through the API. To create or m
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -H "Content-Type: application/json" \
 -d @create-aws-keyset.json \
-"https://api.stackpoint.io/orgs/1/keysets"</code></pre>
+"https://api.nks.netapp.io/orgs/1/keysets"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1356,7 +1356,7 @@ The PATCH method allows you to update the Workspace(s) for a Keyset. To activate
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.stackpoint.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">PATCH https://api.nks.netapp.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1368,7 +1368,7 @@ The PATCH method allows you to update the Workspace(s) for a Keyset. To activate
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -H "Content-Type: application/json" \
 -d @rename-aws-keyset.json \
-"https://api.stackpoint.io/orgs/2/keysets/4"</code></pre>
+"https://api.nks.netapp.io/orgs/2/keysets/4"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1390,7 +1390,7 @@ The PATCH method allows you to update the Workspace(s) for a Keyset. To activate
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
 -H "Content-Type: multipart/form-data" \
 -F name="My Renamed AWS Keyset" \
-"https://api.stackpoint.io/orgs/2/keysets/4"</code></pre>
+"https://api.nks.netapp.io/orgs/2/keysets/4"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1828,7 +1828,7 @@ If you delete a keyset associated with a running cluster, you will not be able t
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.stackpoint.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">DELETE https://api.nks.netapp.io/orgs/{Org ID}/keysets/{Keyset ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1838,7 +1838,7 @@ If you delete a keyset associated with a running cluster, you will not be able t
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/2/keysets/3"</code></pre>
+"https://api.nks.netapp.io/orgs/2/keysets/3"</code></pre>
 </div>
 </div>
 <div class="paragraph">

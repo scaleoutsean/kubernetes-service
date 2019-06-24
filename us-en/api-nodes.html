@@ -6,7 +6,7 @@
   <meta property="og:title" content="Nodes | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/kubernetes-service/us-en/api-nodes.html" />
-	<meta property="og:description" content="How to use the Nodes API resource for the NKS API." />
+	<meta property="og:description" content="How to use the Keysets API resource for the NKS API." />
   <meta property="og:image" content="https://docs.netapp.com/kubernetes-service/us-en/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="How to use the Nodes API resource for the NKS API.">
+  <meta name="description" content="How to use the Keysets API resource for the NKS API.">
   <meta name="keywords" content=" ">
   
 
@@ -505,7 +505,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-15 17:36:04 +0000">03/15/2019</time>
+<time datetime="2019-06-24 18:19:02 +0000">06/24/2019</time>
 
 
 <span>Contributors
@@ -525,7 +525,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Each <a href="https://nks.netapp.io">NetApp Kubernetes Service (NKS)</a> cluster can have 3 or more nodes.</p>
+<p>Each NKS cluster can have 3 or more nodes.</p>
 </div>
 </div>
 </div>
@@ -564,7 +564,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -574,7 +574,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/clusters/2/nodes"</code></pre>
+"https://api.nks.netapp.io/orgs/3/clusters/2/nodes"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -955,7 +955,7 @@
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -965,7 +965,7 @@
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/clusters/2/nodes/1"</code></pre>
+"https://api.nks.netapp.io/orgs/3/clusters/2/nodes/1"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1141,7 +1141,7 @@ Only 1 master node should be added at a time.
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/add_node"</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">POST "https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/add_node"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1241,7 +1241,7 @@ Only 1 master node should be added at a time.
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d @add-master-node.json \
-"https://api.stackpoint.io/orgs/1/clusters/12/add_node"</code></pre>
+"https://api.nks.netapp.io/orgs/1/clusters/12/add_node"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1387,7 +1387,7 @@ Only 1 master node should be added at a time.
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}/can_delete</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}/can_delete</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1397,7 +1397,7 @@ Only 1 master node should be added at a time.
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">curl -X GET \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/clusters/3/nodes/10/can_delete"</code></pre>
+"https://api.nks.netapp.io/orgs/3/clusters/3/nodes/10/can_delete"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1462,7 +1462,7 @@ Only 1 master node should be added at a time.
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.stackpoint.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}/can_delete</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">GET https://api.nks.netapp.io/orgs/{Org ID}/clusters/{Cluster ID}/nodes/{Node ID}/can_delete</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1472,7 +1472,7 @@ Only 1 master node should be added at a time.
 <div class="content">
 <pre class="highlight"><code class="language-shell" data-lang="shell">curl -X DELETE \
 -H "Authorization: Bearer abcdef123456789abcdef123456789" \
-"https://api.stackpoint.io/orgs/3/clusters/3/nodes/10"</code></pre>
+"https://api.nks.netapp.io/orgs/3/clusters/3/nodes/10"</code></pre>
 </div>
 </div>
 <div class="paragraph">
