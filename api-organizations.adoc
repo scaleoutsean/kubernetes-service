@@ -4,7 +4,7 @@ permalink: api-organizations.html
 summary: How to use the Organizations API resource for the NKS API.
 ---
 
-= Organizations
+= Organizations 
 
 == Overview
 

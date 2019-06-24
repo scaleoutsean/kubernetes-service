@@ -4,7 +4,7 @@ permalink: api-members.html
 summary: How to use the Members API resource for the NKS API.
 ---
 
-= Members
+= Members 
 
 Manage members for your Organizations, Teams, and Workspaces.
 

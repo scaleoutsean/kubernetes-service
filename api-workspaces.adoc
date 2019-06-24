@@ -4,7 +4,7 @@ permalink: api-workspaces.html
 summary: How to use the Workspaces API resource for the NKS API.
 ---
 
-= Workspaces
+= Workspaces 
 
 == Overview
 

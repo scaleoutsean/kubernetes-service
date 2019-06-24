@@ -4,7 +4,7 @@ permalink: api-clusters.html
 summary: How to use the Keysets API resource for the NKS API.
 ---
 
-= Clusters
+= Clusters 
 
 The Clusters resource lets you create, manage, and delete Kubernetes clusters on the NKS system.
 

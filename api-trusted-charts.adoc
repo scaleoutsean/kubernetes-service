@@ -4,7 +4,7 @@ permalink: api-trusted-charts.html
 summary: How to use the Trusted Charts API resource for the NKS API.
 ---
 
-= Trusted Charts
+= Trusted Charts 
 
 This resource lists NKS Trusted Charts for your account.
 

@@ -4,7 +4,7 @@ permalink: api-nodes.html
 summary: How to use the Keysets API resource for the NKS API.
 ---
 
-= Nodes
+= Nodes 
 
 Each NKS cluster can have 3 or more nodes.
 

@@ -4,7 +4,7 @@ permalink: api-teams.html
 summary: How to use the Teams API resource for the NKS API.
 ---
 
-= Teams
+= Teams 
 
 == Overview
 

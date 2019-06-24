@@ -23,7 +23,7 @@ All API requests must be authenticated with your API token. To obtain a token:
 
 IMPORTANT: The API only accepts keys from accounts which have the role of `Owner` in the related Organization.
 
-== Usage
+== Usage 
 
 [source,shell]
 ----

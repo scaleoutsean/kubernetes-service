@@ -4,7 +4,7 @@ permalink: api-keysets.html
 summary: How to use the Keysets API resource for the NKS API.
 ---
 
-= Keysets
+= Keysets 
 
 Keysets are credentials used by the system to provision clusters, add nodes, or install applications. Keysets are scoped by organization.
 

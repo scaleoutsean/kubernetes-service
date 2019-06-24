@@ -4,7 +4,7 @@ permalink: api-federations.html
 summary: How to use the Federations API resource for the NKS API.
 ---
 
-= Federations
+= Federations 
 
 Federation simplifies the process of managing multiple clusters, by allowing you to sync resources across clusters, auto-configure DNS servers for cross-cluster discovery, and more.
 

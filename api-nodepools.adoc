@@ -3,7 +3,7 @@ sidebar: sidebar
 permalink: api-nodepools.html
 summary: How to use the Nodepools API resource for the NKS API.
 ---
-= Node Pools
+= Node Pools 
 
 Node pools are used to manage worker nodes with common properties.
 
