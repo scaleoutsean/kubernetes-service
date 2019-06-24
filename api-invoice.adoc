@@ -4,7 +4,7 @@ permalink: api-invoice.html
 summary: How to use the Invoice API resource for the NKS API.
 ---
 
-= Invoice 
+= Invoice
 
 View the current invoice(s) available for the specified user account. Invoices cannot be created, updated, or deleted through the API.
 
@@ -107,7 +107,7 @@ Get the details for a specific invoice.
 
 [source,shell]
 ----
-GET https://api.nks.netapp.io/user/invoices/[Invoice ID]
+GET https://api.nks.netapp.io/user/invoices/{Invoice ID}
 ----
 
 Example request:
