@@ -81,5 +81,7 @@ entries:
         url: /api-subscription.html
       - title: Invoices
         url: /api-invoice.html
+      - title: Notifications
+        url: /api-notifications.html
   - title: What's New
     url: /news.html
